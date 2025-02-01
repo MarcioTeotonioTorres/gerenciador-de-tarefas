@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
 })
 
 export class CadastrarTarefaComponent implements OnInit {
-  @ViewChild('formTarefa') formTarefa!: NgForm;
+  @ViewChild('formTarefa',{static: true}) formTarefa!: NgForm;
   tarefa!: Tarefa;
   
 

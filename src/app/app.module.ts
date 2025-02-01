@@ -6,6 +6,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppRoutes } from "./app.routes";
 import { TarefasModule } from "./tarefas/tarefas.module";
 import { RouterModule } from "@angular/router";
+
+
 @NgModule({
     declarations: [      
     ],

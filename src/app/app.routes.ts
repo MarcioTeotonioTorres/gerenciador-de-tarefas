@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { ListarTarefaComponent } from './tarefas/listar-tarefa/listar-tarefa.component';
 //import { Tarefa } from './tarefas/shared/tarefas.model';
 import { CadastrarTarefaComponent } from './tarefas/cadastrar-tarefa/cadastrar-tarefa.component';
-
+import { EditarTarefaComponent } from './tarefas/editar-tarefa/editar-tarefa.component';
 
 
 export const routes: Routes = [
@@ -24,6 +24,10 @@ export const routes: Routes = [
 {
     path: 'tarefas/cadastrar',
     component: CadastrarTarefaComponent
+},
+{
+    path: 'tarefas/editar/:id',
+    component: EditarTarefaComponent
 }
 
 ];
