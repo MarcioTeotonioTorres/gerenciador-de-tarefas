@@ -4,12 +4,13 @@
   <form #formTarefa="ngForm">
     <div class="form-group">
       <label for="nome">Tarefa:</label>
+       <!--Two way data bind-->
       <input 
         type="text"
         class="form-control"
         id="nome"
         name="nome"
-        [(ngModel)]="tarefa.nome"
+        [(ngModel)]="tarefa.nome" 
         #nome="ngModel"        
         minlength="5" 
         required> 
@@ -31,10 +32,9 @@
         value="Cadastrar"
         [disabled]="!formTarefa.valid">
         
-      <a class="btn btn-default" [routerLink]="['/tarefas']">
-        <span class="glyphicon glyphicon-chevron-left" 
-          aria-hidden="true"></span> Voltar
-      </a>
+      <button class="bi bi-arrow-90deg-left btn btn-default" [routerLink]="['/tarefas'] ">
+        Voltar
+      </button>
     </div>
   </form>
 </div>

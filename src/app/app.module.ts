@@ -6,10 +6,10 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppRoutes } from "./app.routes";
 import { TarefasModule } from "./tarefas/tarefas.module";
 import { RouterModule } from "@angular/router";
-
+import { DirectiveTarefaConcluidaDirective } from "./tarefas/shared/directive-tarefa-concluida.directive";
 
 @NgModule({
-    declarations: [      
+    declarations: [
     ],
     imports:[
         BrowserModule, 
@@ -17,7 +17,8 @@ import { RouterModule } from "@angular/router";
         HttpClientModule,
         AppRoutes,
         TarefasModule,
-        RouterModule
+        RouterModule,DirectiveTarefaConcluidaDirective
+       
     ],
     providers:[],
     bootstrap:[
@@ -25,4 +26,4 @@ import { RouterModule } from "@angular/router";
     ]
         
 })
-export class AppModel{}
+export class AppModule{}
